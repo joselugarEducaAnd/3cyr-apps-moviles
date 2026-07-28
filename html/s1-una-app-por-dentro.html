@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-20260717160000PAGE01">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.2">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>S1 · Una app por dentro | Tu primera app: programa el móvil que llevas encima</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Unidad de desarrollo de apps móviles para 3.º de ESO (Computación y Robótica): programación orientada a eventos con App Inventor, sensores del dispositivo, entrada/salida, apps IoT y proyecto de app propia instalada en un móvil real.">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script>window.exeXapi={"odeId":"20260717160000AP3SDA04","packageTitle":"Tu primera app: programa el móvil que llevas encima","language":"es"};</script><script src="../libs/xapi/exe_xapi.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<script src="../idevices/trueorfalse/trueorfalse.js"></script><link rel="stylesheet" href="../idevices/trueorfalse/trueorfalse.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css"><link rel="stylesheet" href="../theme/zzz-majuelo.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#20260717160000PAGE01" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node no-ch">Inicio</a>
+</li>
+<li class="active"> <a href="../html/s1-una-app-por-dentro.html" class="active no-ch">S1 · Una app por dentro</a>
+</li>
+<li> <a href="../html/s2-programacion-por-eventos.html" class="no-ch">S2 · Programación por eventos</a>
+</li>
+<li> <a href="../html/s3-primera-app-apkqr.html" class="no-ch">S3 · Primera app + APK→QR</a>
+</li>
+<li> <a href="../html/s4-sensores-del-movil.html" class="no-ch">S4 · Sensores del móvil</a>
+</li>
+<li> <a href="../html/s5-entradasalida.html" class="no-ch">S5 · Entrada/salida</a>
+</li>
+<li> <a href="../html/s6-apps-iot.html" class="no-ch">S6 · Apps IoT</a>
+</li>
+<li> <a href="../html/s7-app-propia-i.html" class="no-ch">S7 · App propia I</a>
+</li>
+<li> <a href="../html/s8-app-propia-ii-y-demo.html" class="no-ch">S8 · App propia II y demo</a>
+</li>
+<li> <a href="../html/guia-apkqr.html" class="no-ch">Guía APK→QR</a>
+</li>
+<li> <a href="../html/chuleta-app-inventor.html" class="no-ch">Chuleta App Inventor</a>
+</li>
+</ul>
+</nav><main id="20260717160000PAGE01" class="page"> 
+<header class="main-header"> <p class="page-counter"> <span class="page-counter-label">Página </span><span class="page-counter-content"> <strong class="page-counter-current-page">2</strong><span class="page-counter-sep">/</span><strong class="page-counter-total">11</strong></span></p>
+
+<div class="package-header"><p class="package-title">Tu primera app: programa el móvil que llevas encima</p></div>
+<div class="page-header"><h1 class="page-title">S1 · Una app por dentro</h1></div>
+</header><div id="page-content-20260717160000PAGE01" class="page-content">
+<article id="20260717160000BLK001" class="box no-header">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260717160000IDEV001" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260717160000IDEV001&quot;}">
+<div class="bloque bloque-teoria">
+  <p class="bloque-titulo">Una app por dentro</p>
+  <p>Una <strong>app</strong> es un programa preparado para instalarse y ejecutarse en un
+  dispositivo móvil. Cuando tocas su icono no hay magia: hay <strong>código</strong> que
+  alguien escribió, empaquetado en un archivo instalable (en Android, un archivo
+  <strong>APK</strong>).</p>
+</div>
+
+<h2>¿Cómo se construye una app?</h2>
+<p>Quien programa apps no escribe en un folio en blanco: usa un <strong>IDE</strong>
+(<em>entorno de desarrollo integrado</em>), un programa que reúne todo lo necesario para
+crear otro programa: donde se diseña la pantalla, donde se escribe el código, donde se
+prueba y donde se empaqueta el resultado. Los IDE profesionales (como Android Studio) usan
+lenguajes de texto; nosotros usaremos un <strong>IDE de bloques</strong>, pensado para
+aprender: se programa encajando piezas, como en Scratch, pero el resultado es una
+<strong>app Android de verdad</strong>.</p>
+
+<table class="tabla-datos">
+  <thead><tr><th>IDE de bloques</th><th>Qué es</th></tr></thead>
+  <tbody>
+    <tr><td><strong>App Inventor</strong> (MIT)</td><td>El más usado en educación. Web, gratuito y con acceso sin cuenta. <strong>Es el que usaremos.</strong></td></tr>
+    <tr><td>Kodular</td><td>Derivado de App Inventor, casi idéntico, orientado a apps comerciales.</td></tr>
+    <tr><td>App Lab (Code.org)</td><td>Apps que funcionan en el navegador del móvil, sin instalar. Útil como alternativa.</td></tr>
+  </tbody>
+</table>
+
+<h2>Las dos caras de App Inventor</h2>
+<p>App Inventor tiene dos vistas, y toda la unidad se juega en ellas:</p>
+<table class="tabla-datos">
+  <thead><tr><th>Vista</th><th>Para qué sirve</th><th>Se parece a…</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Diseñador</strong></td><td>Construir la interfaz: desde la <strong>Paleta</strong> arrastras <strong>componentes</strong> (botones, etiquetas, imágenes…) a la pantalla y ajustas sus <strong>propiedades</strong> (color, texto, tamaño…).</td><td>Un editor de diapositivas</td></tr>
+    <tr><td><strong>Bloques</strong></td><td>Darle vida: encajas bloques que dicen <em>qué hace</em> cada componente <em>cuando ocurre algo</em>.</td><td>Scratch</td></tr>
+  </tbody>
+</table>
+<p>Se cambia de una a otra con los botones <strong>Diseñador</strong> y <strong>Bloques</strong>
+de la esquina superior derecha.</p>
+
+<h2>Entrar sin cuenta (y no perder nada)</h2>
+<p>Entraremos por la puerta <strong>sin registro</strong> de App Inventor:</p>
+<ol>
+  <li>Abre <a href="https://code.appinventor.mit.edu" target="_blank" rel="noopener">code.appinventor.mit.edu</a>.</li>
+  <li>Pulsa <strong>«Continue Without An Account»</strong> (continuar sin cuenta).</li>
+  <li>El sistema te da un <strong>código de regreso</strong> (<em>revisit code</em>): unos
+  <strong>15 caracteres formados por cuatro palabras separadas por guiones</strong>, por
+  ejemplo <code>puente-lento-verde-rio</code>. <strong>Ese código ES tu cuenta:</strong> con él
+  recuperas tus proyectos el próximo día, desde cualquier ordenador. Cópialo tal cual, sin
+  cambiar ni una letra.</li>
+  <li>Pon la interfaz en español con el botón <strong>Idioma</strong> de la barra superior.</li>
+</ol>
+<div class="bloque bloque-nota">
+  <p class="bloque-titulo">El código de regreso se apunta 3 veces</p>
+  <p>En tu <strong>ficha de respuestas</strong>, en tu <strong>agenda o cuaderno</strong> y,
+  si trabajáis en pareja, cada miembro lo lleva apuntado. Y aun así, la copia de seguridad
+  manda: <strong>exporta el <code>.aia</code> al acabar cada sesión</strong> y súbelo a
+  Classroom. Los dos comandos que vas a usar toda la unidad están en el menú
+  <strong>Proyectos</strong>:</p>
+  <ul>
+    <li><strong>Proyectos → «Exportar a mi ordenador el proyecto (.aia) seleccionado»</strong>
+    → guarda la copia.</li>
+    <li><strong>Proyectos → «Importar proyecto (.aia) desde mi ordenador…»</strong>
+    → recupera la copia si el código de regreso falla.</li>
+  </ul>
+</div>
+
+<div class="bloque bloque-actividad">
+  <p class="bloque-titulo">Tarea S1 · Reconocimiento del terreno</p>
+  <p>Individual, con la <strong>ficha de respuestas</strong> de Classroom:</p>
+  <ol>
+    <li>Entra en App Inventor sin cuenta, pon la interfaz en español y
+    <strong>apunta tu código de regreso</strong> en la ficha.</li>
+    <li>Crea un proyecto llamado <code>s1_exploracion</code>.</li>
+    <li>Explora el <strong>Diseñador</strong>: añade a la pantalla un <strong>Botón</strong>
+    (<em>Button</em>), una <strong>Etiqueta</strong> (<em>Label</em>) y una
+    <strong>Imagen</strong> (<em>Image</em>), todos de la paleta <strong>Interfaz de
+    usuario</strong>. Cambia al menos 3 propiedades (por ejemplo: el texto del botón, el color
+    de fondo de la pantalla y el tamaño de la etiqueta) y anota en la ficha cuáles has
+    cambiado.</li>
+    <li>Responde en la ficha: ¿qué se hace en el Diseñador y qué se hace en Bloques?
+    ¿Qué es un componente y qué es una propiedad?</li>
+    <li><strong>Cierre de sesión:</strong> exporta <code>s1_exploracion.aia</code> y súbelo,
+    junto a la ficha, a la tarea <strong>«Tareas guiadas de apps»</strong> de Classroom.</li>
+  </ol>
+</div>
+
+<div class="bloque bloque-dua">
+  <p class="bloque-titulo">¿Vas sobrado/a?</p>
+  <p>Investiga en el Diseñador la paleta <strong>Disposición</strong> (<em>Layout</em>): ¿para
+  qué sirven las disposiciones horizontal y vertical? Coloca tres botones en fila usando una.</p>
+</div>
+</div>
+</div>
+</article><article id="block-ms4levpn-eg3lr1lp0" class="box">
+<header class="box-head no-icon">
+<h1 class="box-title">Verdadero o falso</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1785239346442-w1xniljng" class="idevice_node trueorfalse" data-idevice-path="../idevices/trueorfalse/" data-idevice-type="trueorfalse" data-idevice-component-type="json" data-idevice-json-data="{&quot;id&quot;:&quot;idevice-1785239346442-w1xniljng&quot;,&quot;typeGame&quot;:&quot;TrueOrFalse&quot;,&quot;eXeGameInstructions&quot;:&quot;&lt;p&gt;Responde todas las preguntas del cuestionario.&lt;/p&gt;&quot;,&quot;eXeIdeviceTextAfter&quot;:&quot;&quot;,&quot;msgs&quot;:{&quot;msgStartGame&quot;:&quot;Pulsa aquí para empezar&quot;,&quot;msgTime&quot;:&quot;Tiempo por pregunta&quot;,&quot;msgNoImage&quot;:&quot;Pregunta sin imágenes&quot;,&quot;msgScoreScorm&quot;:&quot;La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.&quot;,&quot;msgEndGameScore&quot;:&quot;Comience la partida antes de guardar la puntuación.&quot;,&quot;msgOnlySaveScore&quot;:&quot;¡Solo puede guardar la puntuación una vez!&quot;,&quot;msgOnlySave&quot;:&quot;Solo puede guardar una vez&quot;,&quot;msgYouScore&quot;:&quot;Su puntuación&quot;,&quot;msgAuthor&quot;:&quot;Autoría&quot;,&quot;msgOnlySaveAuto&quot;:&quot;Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.&quot;,&quot;msgSaveAuto&quot;:&quot;Su puntuación se guardará automáticamente después de cada pregunta.&quot;,&quot;msgSeveralScore&quot;:&quot;Puede guardar la puntuación tantas veces como quiera&quot;,&quot;msgYouLastScore&quot;:&quot;La última puntuación guardada es&quot;,&quot;msgActityComply&quot;:&quot;Ya ha realizado esta actividad.&quot;,&quot;msgPlaySeveralTimes&quot;:&quot;Puede realizar esta actividad cuantas veces quiera&quot;,&quot;msgUncompletedActivity&quot;:&quot;Actividad no completada&quot;,&quot;msgSuccessfulActivity&quot;:&quot;Actividad superada. Puntuación: %s&quot;,&quot;msgUnsuccessfulActivity&quot;:&quot;Actividad no superada. Puntuación: %s&quot;,&quot;msgTypeGame&quot;:&quot;Verdadero o falso&quot;,&quot;msgFeedback&quot;:&quot;Retroalimentación&quot;,&quot;msgSuggestion&quot;:&quot;Sugerencia&quot;,&quot;msgSolution&quot;:&quot;Solución&quot;,&quot;msgQuestion&quot;:&quot;Pregunta&quot;,&quot;msgTrue&quot;:&quot;Verdadero&quot;,&quot;msgFalse&quot;:&quot;Falso&quot;,&quot;msgOk&quot;:&quot;Correcto&quot;,&quot;msgKO&quot;:&quot;Incorrecto&quot;,&quot;msgShow&quot;:&quot;Mostrar&quot;,&quot;msgHide&quot;:&quot;Ocultar&quot;,&quot;msgCheck&quot;:&quot;Comprobar&quot;,&quot;msgReboot&quot;:&quot;¡Prueba otra vez!&quot;,&quot;msgScore&quot;:&quot;Puntuación&quot;,&quot;msgWeight&quot;:&quot;Peso&quot;,&quot;msgNext&quot;:&quot;Siguiente&quot;,&quot;msgPrevious&quot;:&quot;Anterior&quot;},&quot;questionsRandom&quot;:false,&quot;percentageQuestions&quot;:100,&quot;isTest&quot;:false,&quot;time&quot;:0,&quot;questionsGame&quot;:[{&quot;question&quot;:&quot;&lt;p&gt;En el Diseñador se programa el comportamiento de la app.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;El Diseñador construye la interfaz (componentes y propiedades); el comportamiento se programa en Bloques.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;¿Dónde encajabas los bloques?&lt;/p&gt;&quot;,&quot;solution&quot;:0},{&quot;question&quot;:&quot;&lt;p&gt;Un componente no visible, como TextoAVoz, se programa igual que un botón.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;Exacto: no se ve en pantalla, pero tiene propiedades, métodos y eventos como cualquier componente.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;Piensa en el sintetizador de voz del Loro.&lt;/p&gt;&quot;,&quot;solution&quot;:1},{&quot;question&quot;:&quot;&lt;p&gt;Si pierdo mi código de regreso y no tengo el .aia, puedo recuperar el proyecto con mi correo.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;No: el acceso es anónimo, sin cuenta. Sin código y sin copia .aia el proyecto no se recupera. Por eso el .aia va a Classroom cada sesión.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;¿Qué apuntaste 3 veces el primer día?&lt;/p&gt;&quot;,&quot;solution&quot;:0},{&quot;question&quot;:&quot;&lt;p&gt;El código de regreso son cuatro palabras separadas por guiones.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;Correcto: unos 15 caracteres en cuatro palabras, tipo puente-lento-verde-rio. Hay que copiarlo tal cual, sin cambiar ni una letra.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;Mira tu ficha de respuestas.&lt;/p&gt;&quot;,&quot;solution&quot;:1},{&quot;question&quot;:&quot;&lt;p&gt;App Inventor se usa desde el navegador, sin instalar nada en el ordenador.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;Correcto: es un IDE web; por eso funciona en cualquier ordenador del aula o de casa.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;¿Tuviste que instalar algo?&lt;/p&gt;&quot;,&quot;solution&quot;:1}],&quot;isScorm&quot;:0,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;,&quot;repeatActivity&quot;:true,&quot;weighted&quot;:100,&quot;evaluation&quot;:false,&quot;evaluationID&quot;:&quot;&quot;,&quot;showSlider&quot;:false,&quot;ideviceId&quot;:&quot;idevice-1785239346442-w1xniljng&quot;}" data-idevice-template="trueorfalse.html">
+<div class="exe-trueorfalse-container">
+  
+    <div class="game-evaluation-ids js-hidden" data-id="idevice-1785239346442-w1xniljng" data-evaluationb="false" data-evaluationid=""></div>
+        <div class="TOFP-instructions"><p>Responde todas las preguntas del cuestionario.</p></div>
+        <div class="TOFP-MainContainer" data-instance="idevice-1785239346442-w1xniljng" id="tofPMainContainer-idevice-1785239346442-w1xniljng">
+            <div class="TOFP-GameContainer" id="tofPGameContainer-idevice-1785239346442-w1xniljng">
+                <div class="TOFP-GameScoreBoard TOFP-EHidden">
+                    <div class="TOFP-TimeNumber">
+                        <strong><span class="sr-av">Tiempo por pregunta:</span></strong>
+                        <p id="tofPPTime-idevice-1785239346442-w1xniljng" class="TOFP-PTime">00:00:</p>
+                    </div>
+                </div>
+                <div class="TOFP-MessgeDiv" id="tofPMessageDiv-idevice-1785239346442-w1xniljng">
+                    <div class="TOFP-Message" id="tofPMessage-idevice-1785239346442-w1xniljng"></div>
+                </div>
+                <div class="TOFP-StartGameDiv TOFP-EHidden" id="tofPStartGameDiv-idevice-1785239346442-w1xniljng">
+                    <button  id="tofPStartGame-idevice-1785239346442-w1xniljng" type="button" class="btn btn-primary">Pulsa aquí para empezar</button>
+                </div>
+                <div class="TOFP-Multimedia " id="tofPMultimedia-idevice-1785239346442-w1xniljng">
+                </div>
+                <div class="TOFP-CheckTestDiv TOFP-EHidden" id="tofPCheckTestDiv-idevice-1785239346442-w1xniljng">
+                    <button id="tofPCheckTest-idevice-1785239346442-w1xniljng" type="button" class="btn btn-primary">Comprobar</button>
+                    <button id="tofRebootTest-idevice-1785239346442-w1xniljng" type="button" class="btn btn-primary TOFP-EHidden">¡Prueba otra vez!</button>
+                </div>
+        </div> 
+        <div class="Games-BottonContainer">
+            <div class="Games-GetScore">
+                <input id="tofPSendScore-idevice-1785239346442-w1xniljng" type="button" value="Guardar la puntuación" class="feedbackbutton Games-SendScore" style="display:none"/> <span class="Games-RepeatActivity"></span>
+            </div>
+        </div>
+        <div class="TOFP-After"></div>
+        <div class="questionsMedia" style="display:none"></div>
+</div>
+
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../index.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/s2-programacion-por-eventos.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class=""> <p> <span class="license-label">Licencia: </span><span class="license">creative commons: attribution - share alike</span></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(Ventana nueva)</span></span></a></p>
+</body>
+</html>

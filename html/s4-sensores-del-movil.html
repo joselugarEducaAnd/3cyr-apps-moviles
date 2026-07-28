@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-20260717160000PAGE04">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.2">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>S4 · Sensores del móvil | Tu primera app: programa el móvil que llevas encima</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Unidad de desarrollo de apps móviles para 3.º de ESO (Computación y Robótica): programación orientada a eventos con App Inventor, sensores del dispositivo, entrada/salida, apps IoT y proyecto de app propia instalada en un móvil real.">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script>window.exeXapi={"odeId":"20260717160000AP3SDA04","packageTitle":"Tu primera app: programa el móvil que llevas encima","language":"es"};</script><script src="../libs/xapi/exe_xapi.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<script src="../idevices/relate/relate.js"></script><link rel="stylesheet" href="../idevices/relate/relate.css">
+<script src="../libs/jquery-ui/jquery-ui.min.js"> </script>
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css"><link rel="stylesheet" href="../theme/zzz-majuelo.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#20260717160000PAGE04" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node no-ch">Inicio</a>
+</li>
+<li> <a href="../html/s1-una-app-por-dentro.html" class="no-ch">S1 · Una app por dentro</a>
+</li>
+<li> <a href="../html/s2-programacion-por-eventos.html" class="no-ch">S2 · Programación por eventos</a>
+</li>
+<li> <a href="../html/s3-primera-app-apkqr.html" class="no-ch">S3 · Primera app + APK→QR</a>
+</li>
+<li class="active"> <a href="../html/s4-sensores-del-movil.html" class="active no-ch">S4 · Sensores del móvil</a>
+</li>
+<li> <a href="../html/s5-entradasalida.html" class="no-ch">S5 · Entrada/salida</a>
+</li>
+<li> <a href="../html/s6-apps-iot.html" class="no-ch">S6 · Apps IoT</a>
+</li>
+<li> <a href="../html/s7-app-propia-i.html" class="no-ch">S7 · App propia I</a>
+</li>
+<li> <a href="../html/s8-app-propia-ii-y-demo.html" class="no-ch">S8 · App propia II y demo</a>
+</li>
+<li> <a href="../html/guia-apkqr.html" class="no-ch">Guía APK→QR</a>
+</li>
+<li> <a href="../html/chuleta-app-inventor.html" class="no-ch">Chuleta App Inventor</a>
+</li>
+</ul>
+</nav><main id="20260717160000PAGE04" class="page"> 
+<header class="main-header"> <p class="page-counter"> <span class="page-counter-label">Página </span><span class="page-counter-content"> <strong class="page-counter-current-page">5</strong><span class="page-counter-sep">/</span><strong class="page-counter-total">11</strong></span></p>
+
+<div class="package-header"><p class="package-title">Tu primera app: programa el móvil que llevas encima</p></div>
+<div class="page-header"><h1 class="page-title">S4 · Sensores del móvil</h1></div>
+</header><div id="page-content-20260717160000PAGE04" class="page-content">
+<article id="20260717160000BLK004" class="box no-header">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260717160000IDEV004" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260717160000IDEV004&quot;}">
+<div class="bloque bloque-teoria">
+  <p class="bloque-titulo">Los sensores del móvil: eventos que nadie toca</p>
+  <p>Tu móvil está lleno de <strong>sensores</strong>: componentes que miden algo del mundo
+  real. Para la app, cada sensor es una <strong>fuente de eventos</strong>: «me han sacudido»,
+  «he cambiado de sitio», «me han girado». Hoy tu app reaccionará a un evento que
+  <strong>nadie toca en la pantalla</strong>.</p>
+</div>
+
+<h2>¿Qué sensores lleva un móvil?</h2>
+<table class="tabla-datos">
+  <thead><tr><th>Sensor</th><th>Qué mide</th><th>Evento típico en una app</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Acelerómetro</strong></td><td>Movimiento y aceleración</td><td>Sacudir el móvil; girar la pantalla</td></tr>
+    <tr><td><strong>Localización (GPS)</strong></td><td>Posición geográfica</td><td>Llegar a un lugar; cambiar de ubicación</td></tr>
+    <tr><td><strong>Brújula (magnetómetro)</strong></td><td>Orientación respecto al norte</td><td>Girar hacia una dirección</td></tr>
+    <tr><td><strong>Proximidad</strong></td><td>Cercanía de un objeto</td><td>Acercarse el móvil a la oreja (se apaga la pantalla)</td></tr>
+    <tr><td><strong>Luz</strong></td><td>Iluminación ambiente</td><td>Bajar el brillo de noche</td></tr>
+    <tr><td><strong>Micrófono / cámara</strong></td><td>Sonido / imagen</td><td>Detectar voz; escanear un QR</td></tr>
+  </tbody>
+</table>
+<p>En App Inventor los tienes en la paleta <strong>Sensores</strong>. Son componentes
+<strong>no visibles</strong>: se arrastran a la pantalla, no se ven, pero generan eventos.</p>
+
+<h2>App guiada: «El dado mágico»</h2>
+<p>Proyecto <code>s4_dado</code>: agitas el móvil y sale un número del 1 al 6.</p>
+<p><strong>Diseñador</strong> — necesitas tres componentes:</p>
+<table class="tabla-datos">
+  <thead><tr><th>Componente (paleta)</th><th>Nombre</th><th>Propiedades</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Etiqueta</strong> <em>(Label)</em> — Interfaz de usuario</td><td><code>EtiquetaDado</code></td><td><em>Texto</em>: «Agita»; <em>TamañoDeLetra</em>: 80; centrada</td></tr>
+    <tr><td><strong>SensorDeAceleración</strong> <em>(AccelerometerSensor)</em> — Sensores</td><td><code>SensorDeAceleración1</code></td><td>Ninguna (no visible)</td></tr>
+    <tr><td><strong>Sonido</strong> <em>(Sound)</em> — Medios</td><td><code>Sonido1</code></td><td>Ninguna (no visible; lo usamos para vibrar)</td></tr>
+  </tbody>
+</table>
+<p><strong>Bloques:</strong></p>
+<svg viewBox="0 0 700 162" role="img" aria-label="Bloque de App Inventor: cuando  SensorDeAceleración1 .Sacudido   ejecutar" style="max-width:700px;width:100%;height:auto;display:block;margin:0.6em auto;"><rect x="2" y="2" width="694" height="158" rx="10" fill="#d19a1e" stroke="#a87a12" stroke-width="2.5"/><rect x="18" y="40" width="664" height="104" rx="8" fill="#f7f2e6"/><text x="16" y="30" font-family="Verdana, 'DejaVu Sans', Arial, sans-serif" font-size="15" font-weight="bold" fill="#ffffff">cuando  SensorDeAceleración1 .Sacudido   ejecutar</text><rect x="32" y="46" width="636" height="42" rx="6" fill="#2e8b57" stroke="#1f6e43" stroke-width="2"/><text x="46" y="73" font-family="Verdana, 'DejaVu Sans', Arial, sans-serif" font-size="13" fill="#ffffff">poner  EtiquetaDado . Texto  como ( entero aleatorio entre 1 y 6 )</text><rect x="32" y="96" width="636" height="42" rx="6" fill="#8e5ea2" stroke="#6f4685" stroke-width="2"/><text x="46" y="123" font-family="Verdana, 'DejaVu Sans', Arial, sans-serif" font-size="13" fill="#ffffff">llamar  Sonido1 .Vibrar   milisegundos ( 300 )</text></svg>
+<p>El evento <strong>.Sacudido</strong> se dispara al agitar el móvil. La respuesta: poner en la
+etiqueta un <strong>número aleatorio entre 1 y 6</strong> (bloque <em>entero aleatorio</em>, en
+<strong>Bloques → Integrados → Matemáticas</strong>). Añade vibración para que «se sienta» la
+tirada.</p>
+
+<div class="bloque bloque-nota">
+  <p class="bloque-titulo">Dos cosas que vas a notar al probarlo</p>
+  <ul>
+    <li><strong>El evento Sacudido se dispara varias veces seguidas</strong> mientras agitas:
+    es normal que el número cambie a toda velocidad y se pare en uno. No es un error del
+    programa, es cómo funciona el sensor.</li>
+    <li><strong>No se puede probar con el ratón:</strong> el ordenador no tiene acelerómetro.
+    Pruébalo instalando el APK (<a href="../html/guia-apkqr.html">guía APK→QR</a>). Si hoy no tenéis
+    móvil disponible, montad además un botón «Tirar» que haga lo mismo que el Sacudido: así
+    probáis la lógica en el ordenador y el sensor en el móvil.</li>
+  </ul>
+</div>
+
+<div class="bloque bloque-actividad">
+  <p class="bloque-titulo">Tarea S4 · El dado mágico</p>
+  <ol>
+    <li>Monta el dado (Diseñador + Bloques) con el botón alternativo «Tirar».</li>
+    <li><strong>Mejora obligatoria:</strong> que al tirar cambie también el color de fondo de
+    la pantalla, o que vibre distinto si sale un 6.</li>
+    <li>Instálala en un móvil si es posible y haz captura/foto funcionando.</li>
+    <li><strong>Cierre de sesión:</strong> exporta <code>s4_dado.aia</code> y súbelo con las
+    capturas a la tarea <strong>«Tareas guiadas de apps»</strong> de Classroom.</li>
+  </ol>
+</div>
+
+<div class="bloque bloque-dua">
+  <p class="bloque-titulo">¿Vas sobrado/a?</p>
+  <p>Convierte el dado en «piedra, papel o tijera» (aleatorio entre 3 textos), o investiga el
+  componente <strong>SensorDeUbicación</strong> (<em>LocationSensor</em>): ¿qué evento dispara
+  cuando cambia la posición? ¿Qué app conoces que lo use?</p>
+</div>
+</div>
+</div>
+</article><article id="block-ms4m2o5f-ri9tuo361" class="box">
+<header class="box-head no-icon">
+<h1 class="box-title">Relaciona</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1785240456387-sxxp2yrdy" class="idevice_node relate" data-idevice-path="../idevices/relate/" data-idevice-type="relate">
+<div class="relaciona-IDevice"><div class="relaciona-instructions gameQP-instructions"><p>Relaciona cada sensor con su evento/uso.</p></div><div class="relaciona-DataGame js-hidden">{"typeGame":"Relaciona","author":"","randomCards":true,"instructions":"<p>Relaciona cada sensor con su evento/uso.</p>","showMinimize":false,"itinerary":{"showClue":false,"clueGame":"","percentageClue":40,"showCodeAccess":false,"codeAccess":"","messageCodeAccess":""},"cardsGame":[{"url":"","x":0,"y":0,"author":"","alt":"","audio":"","color":"#000000","backcolor":"#ffffff","eText":"SensorDeAceleraci%C3%B3n","urlBk":"","xBk":0,"yBk":0,"authorBk":"","altBk":"","audioBk":"","colorBk":"#000000","backcolorBk":"#ffffff","eTextBk":"Sacudir%20el%20m%C3%B3vil"},{"url":"","x":0,"y":0,"author":"","alt":"","audio":"","color":"#000000","backcolor":"#ffffff","eText":"SensorDeUbicaci%C3%B3n%20(GPS)","urlBk":"","xBk":0,"yBk":0,"authorBk":"","altBk":"","audioBk":"","colorBk":"#000000","backcolorBk":"#ffffff","eTextBk":"Saber%20en%20qu%C3%A9%20calle%20est%C3%A1s"},{"url":"","x":0,"y":0,"author":"","alt":"","audio":"","color":"#000000","backcolor":"#ffffff","eText":"SensorDeOrientaci%C3%B3n","urlBk":"","xBk":0,"yBk":0,"authorBk":"","altBk":"","audioBk":"","colorBk":"#000000","backcolorBk":"#ffffff","eTextBk":"Apuntar%20al%20norte"},{"url":"","x":0,"y":0,"author":"","alt":"","audio":"","color":"#000000","backcolor":"#ffffff","eText":"SensorDeProximidad","urlBk":"","xBk":0,"yBk":0,"authorBk":"","altBk":"","audioBk":"","colorBk":"#000000","backcolorBk":"#ffffff","eTextBk":"Apagar%20la%20pantalla%20al%20hablar"},{"url":"","x":0,"y":0,"author":"","alt":"","audio":"","color":"#000000","backcolor":"#ffffff","eText":"Reloj","urlBk":"","xBk":0,"yBk":0,"authorBk":"","altBk":"","audioBk":"","colorBk":"#000000","backcolorBk":"#ffffff","eTextBk":"%C2%ABCada%20segundo%E2%80%A6%C2%BB"},{"url":"","x":0,"y":0,"author":"","alt":"","audio":"","color":"#000000","backcolor":"#ffffff","eText":"Micr%C3%B3fono","urlBk":"","xBk":0,"yBk":0,"authorBk":"","altBk":"","audioBk":"","colorBk":"#000000","backcolorBk":"#ffffff","eTextBk":"Detectar%20tu%20voz"}],"isScorm":0,"textButtonScorm":"Guardar la puntuación","repeatActivity":true,"weighted":100,"textAfter":"","version":2,"percentajeCards":100,"type":1,"showSolution":true,"timeShowSolution":3,"time":3,"evaluation":false,"evaluationID":"d5af8312-959a-4578-93ce-7024912b8769","id":"idevice-1785240456387-sxxp2yrdy","msgs":{"msgSubmit":"Enviar","msgClue":"¡Genial! La pista es:","msgCodeAccess":"Código de acceso","msgPlayStart":"Pulsa aquí para jugar","msgScore":"Puntuación","msgErrors":"Errores","msgHits":"Aciertos","msgMinimize":"Minimizar","msgMaximize":"Maximizar","msgFullScreen":"Pantalla Completa","msgExitFullScreen":"Salir del modo pantalla completa","msgNoImage":"Pregunta sin imágenes","msgEndGameScore":"Comience la partida antes de guardar la puntuación.","msgScoreScorm":"La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.","msgOnlySaveScore":"¡Solo puede guardar la puntuación una vez!","msgOnlySave":"Solo puede guardar una vez","msgInformation":"Información","msgYouScore":"Su puntuación","msgAuthor":"Autoría","msgOnlySaveAuto":"Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.","msgSaveAuto":"Su puntuación se guardará automáticamente después de cada pregunta.","msgSeveralScore":"Puede guardar la puntuación tantas veces como quiera","msgYouLastScore":"La última puntuación guardada es","msgActityComply":"Ya ha realizado esta actividad.","msgPlaySeveralTimes":"Puede realizar esta actividad cuantas veces quiera","msgClose":"Cerrar","msgAudio":"Audio","msgNumQuestions":"Número de tarjetas","msgTryAgain":"Necesitas al menos %s% de respuestas correctas para obtener la información. Inténtalo de nuevo.","msgEndGameM":"Has completado el juego. Tu puntuación es %s.","msgUncompletedActivity":"Actividad no completada","msgSuccessfulActivity":"Actividad superada. Puntuación: %s","msgUnsuccessfulActivity":"Actividad no superada. Puntuación: %s","msgTypeGame":"Relaciona","msgCheck":"Comprobar","msgRestart":"Reiniciar"}}</div><div class="game-evaluation-ids js-hidden" data-id="idevice-1785240456387-sxxp2yrdy" data-evaluationb="false" data-evaluationid="d5af8312-959a-4578-93ce-7024912b8769"></div><div class="relaciona-bns js-hidden">Su navegador no es compatible con esta herramienta.</div></div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/s3-primera-app-apkqr.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/s5-entradasalida.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class=""> <p> <span class="license-label">Licencia: </span><span class="license">creative commons: attribution - share alike</span></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(Ventana nueva)</span></span></a></p>
+</body>
+</html>

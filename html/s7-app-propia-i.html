@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-20260717160000PAGE07">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.2">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>S7 · App propia I | Tu primera app: programa el móvil que llevas encima</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Unidad de desarrollo de apps móviles para 3.º de ESO (Computación y Robótica): programación orientada a eventos con App Inventor, sensores del dispositivo, entrada/salida, apps IoT y proyecto de app propia instalada en un móvil real.">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script>window.exeXapi={"odeId":"20260717160000AP3SDA04","packageTitle":"Tu primera app: programa el móvil que llevas encima","language":"es"};</script><script src="../libs/xapi/exe_xapi.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<script src="../idevices/trueorfalse/trueorfalse.js"></script><link rel="stylesheet" href="../idevices/trueorfalse/trueorfalse.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css"><link rel="stylesheet" href="../theme/zzz-majuelo.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#20260717160000PAGE07" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node no-ch">Inicio</a>
+</li>
+<li> <a href="../html/s1-una-app-por-dentro.html" class="no-ch">S1 · Una app por dentro</a>
+</li>
+<li> <a href="../html/s2-programacion-por-eventos.html" class="no-ch">S2 · Programación por eventos</a>
+</li>
+<li> <a href="../html/s3-primera-app-apkqr.html" class="no-ch">S3 · Primera app + APK→QR</a>
+</li>
+<li> <a href="../html/s4-sensores-del-movil.html" class="no-ch">S4 · Sensores del móvil</a>
+</li>
+<li> <a href="../html/s5-entradasalida.html" class="no-ch">S5 · Entrada/salida</a>
+</li>
+<li> <a href="../html/s6-apps-iot.html" class="no-ch">S6 · Apps IoT</a>
+</li>
+<li class="active"> <a href="../html/s7-app-propia-i.html" class="active no-ch">S7 · App propia I</a>
+</li>
+<li> <a href="../html/s8-app-propia-ii-y-demo.html" class="no-ch">S8 · App propia II y demo</a>
+</li>
+<li> <a href="../html/guia-apkqr.html" class="no-ch">Guía APK→QR</a>
+</li>
+<li> <a href="../html/chuleta-app-inventor.html" class="no-ch">Chuleta App Inventor</a>
+</li>
+</ul>
+</nav><main id="20260717160000PAGE07" class="page"> 
+<header class="main-header"> <p class="page-counter"> <span class="page-counter-label">Página </span><span class="page-counter-content"> <strong class="page-counter-current-page">8</strong><span class="page-counter-sep">/</span><strong class="page-counter-total">11</strong></span></p>
+
+<div class="package-header"><p class="package-title">Tu primera app: programa el móvil que llevas encima</p></div>
+<div class="page-header"><h1 class="page-title">S7 · App propia I</h1></div>
+</header><div id="page-content-20260717160000PAGE07" class="page-content">
+<article id="20260717160000BLK007" class="box no-header">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260717160000IDEV007" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260717160000IDEV007&quot;}">
+<div class="bloque bloque-teoria">
+  <p class="bloque-titulo">Vuestra app: primero pensarla, luego construirla</p>
+  <p>Empieza el proyecto final. En pareja vais a crear una <strong>app propia</strong> que
+  resuelva una necesidad cotidiana <strong>vuestra</strong>. Las apps que salen bien no
+  empiezan en el ordenador: empiezan en un <strong>plan</strong>.</p>
+</div>
+
+<h2>Requisitos mínimos (y de ahí para arriba)</h2>
+<table class="tabla-datos">
+  <thead><tr><th>Mínimo común (obligatorio)</th><th>Extensiones (suman)</th></tr></thead>
+  <tbody>
+    <tr>
+      <td>
+        <ul>
+          <li><strong>2 pantallas</strong> como mínimo (p. ej. principal + «Acerca de»)</li>
+          <li><strong>Programación por eventos</strong>: al menos 1 evento de usuario con su respuesta</li>
+          <li><strong>1 sensor</strong> del dispositivo usado con sentido</li>
+          <li>Interfaz ordenada (disposiciones, nombres claros)</li>
+        </ul>
+      </td>
+      <td>
+        <ul>
+          <li>3.ª pantalla o navegación completa</li>
+          <li>Varios eventos de tipos distintos (tiempo, sensor…)</li>
+          <li>Guardar datos entre usos (TinyDB)</li>
+          <li>Sonido, voz o imágenes propias</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>Ideas que funcionan (o inventad la vuestra)</h2>
+<ul>
+  <li><strong>Anti-olvidos:</strong> lista de lo que hay que meter en la mochila según el día,
+  con aviso hablado.</li>
+  <li><strong>Árbitro de casa:</strong> quién friega hoy — decisión aleatoria agitando el
+  móvil (sensor + aleatorio).</li>
+  <li><strong>Entrenador de estiramientos:</strong> temporizador por ejercicio con vibración
+  al cambiar (evento de tiempo).</li>
+  <li><strong>Guía del insti:</strong> pantallas con información útil del centro y brújula
+  para orientarse (sensor de orientación).</li>
+</ul>
+
+<div class="bloque bloque-nota">
+  <p class="bloque-titulo">⚠️ Cómo trabajar en pareja sin perder los bloques</p>
+  <p>El proyecto es <strong>uno solo</strong> y vive en <strong>un único código de regreso</strong>
+  (el de una de las dos personas). Reglas de oro:</p>
+  <ol>
+    <li><strong>Solo una persona tiene el proyecto abierto a la vez.</strong> Si los dos entráis
+    con el mismo código simultáneamente, App Inventor detecta dos sesiones y
+    <strong>puede vaciaros el área de bloques</strong>. Si aparece un cartel avisando de otra
+    sesión abierta, <strong>no continuéis</strong>: cerrad y avisad.</li>
+    <li>La otra persona trabaja sobre una <strong>copia importada</strong> del <code>.aia</code>
+    en su propio código de regreso, y al final se decide cuál es la versión buena.</li>
+    <li><strong>Compilad siempre desde el mismo código de regreso</strong>, o el móvil se negará
+    a actualizar la app («Aplicación no instalada»).</li>
+  </ol>
+</div>
+
+<div class="bloque bloque-actividad">
+  <p class="bloque-titulo">Tarea S7 (parte 1) · El plan de la app</p>
+  <p>En la <strong>ficha de plan</strong> de Classroom (una por pareja, con los dos nombres
+  dentro del documento, no en el nombre del archivo):</p>
+  <ol>
+    <li><strong>La necesidad:</strong> ¿qué problema cotidiano resuelve? ¿para quién?</li>
+    <li><strong>Boceto de cada pantalla</strong> (a mano vale: foto del papel) con sus
+    componentes señalados.</li>
+    <li><strong>Tabla de eventos:</strong> CUANDO <em>evento</em> → <em>respuesta</em>
+    (mínimo 3, uno de sensor).</li>
+    <li><strong>Reparto:</strong> quién monta qué (los dos programáis) y de quién es el código
+    de regreso del proyecto.</li>
+  </ol>
+  <p><strong>Enseñad el plan antes de programar</strong> — os ahorrará la mitad de los
+  problemas.</p>
+</div>
+
+<div class="bloque bloque-actividad">
+  <p class="bloque-titulo">Tarea S7 (parte 2) · Manos a la obra</p>
+  <ol>
+    <li>Proyecto <code>app_propia</code> (un solo proyecto por pareja).</li>
+    <li>Montad primero las pantallas (Diseñador) y después los eventos principales (Bloques),
+    siguiendo el plan.</li>
+    <li><strong>Cierre de sesión:</strong> exportad <code>app_propia.aia</code> y subidlo
+    <strong>los dos</strong> a la tarea <strong>«App propia + demo»</strong> de Classroom, junto con la ficha de plan.</li>
+  </ol>
+</div>
+
+<div class="bloque bloque-nota">
+  <p class="bloque-titulo">Cómo probar sin perder la sesión entera compilando</p>
+  <p>Sin el móvil enchufado al programa, cada prueba real cuesta: compilar (1-2 min), escanear
+  el QR e instalar. Así que trabajad <strong>por tandas</strong>:</p>
+  <ul>
+    <li><strong>Cada pocos bloques:</strong> revisadlos en pantalla y leedlos en voz alta
+    («cuando… entonces…»). La mitad de los fallos se cazan así, sin ejecutar nada.</li>
+    <li><strong>A mitad de sesión y al final:</strong> compilad y probad de verdad en el móvil.
+    Dos compilaciones bien aprovechadas rinden más que diez a medias.</li>
+    <li><strong>Truco:</strong> añadid un botón que haga lo mismo que el sensor, para poder
+    probar la lógica en el ordenador mientras tanto.</li>
+  </ul>
+</div>
+</div>
+</div>
+</article><article id="block-ms4mg7cf-rjl7igb1o" class="box">
+<header class="box-head no-icon">
+<h1 class="box-title">Verdadero o falso</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1785241087790-e3vg9b660" class="idevice_node trueorfalse" data-idevice-path="../idevices/trueorfalse/" data-idevice-type="trueorfalse" data-idevice-component-type="json" data-idevice-json-data="{&quot;id&quot;:&quot;idevice-1785241087790-e3vg9b660&quot;,&quot;typeGame&quot;:&quot;TrueOrFalse&quot;,&quot;eXeGameInstructions&quot;:&quot;&lt;p&gt;Responde todas las preguntas del cuestionario.&lt;/p&gt;&quot;,&quot;eXeIdeviceTextAfter&quot;:&quot;&quot;,&quot;msgs&quot;:{&quot;msgStartGame&quot;:&quot;Pulsa aquí para empezar&quot;,&quot;msgTime&quot;:&quot;Tiempo por pregunta&quot;,&quot;msgNoImage&quot;:&quot;Pregunta sin imágenes&quot;,&quot;msgScoreScorm&quot;:&quot;La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.&quot;,&quot;msgEndGameScore&quot;:&quot;Comience la partida antes de guardar la puntuación.&quot;,&quot;msgOnlySaveScore&quot;:&quot;¡Solo puede guardar la puntuación una vez!&quot;,&quot;msgOnlySave&quot;:&quot;Solo puede guardar una vez&quot;,&quot;msgYouScore&quot;:&quot;Su puntuación&quot;,&quot;msgAuthor&quot;:&quot;Autoría&quot;,&quot;msgOnlySaveAuto&quot;:&quot;Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.&quot;,&quot;msgSaveAuto&quot;:&quot;Su puntuación se guardará automáticamente después de cada pregunta.&quot;,&quot;msgSeveralScore&quot;:&quot;Puede guardar la puntuación tantas veces como quiera&quot;,&quot;msgYouLastScore&quot;:&quot;La última puntuación guardada es&quot;,&quot;msgActityComply&quot;:&quot;Ya ha realizado esta actividad.&quot;,&quot;msgPlaySeveralTimes&quot;:&quot;Puede realizar esta actividad cuantas veces quiera&quot;,&quot;msgUncompletedActivity&quot;:&quot;Actividad no completada&quot;,&quot;msgSuccessfulActivity&quot;:&quot;Actividad superada. Puntuación: %s&quot;,&quot;msgUnsuccessfulActivity&quot;:&quot;Actividad no superada. Puntuación: %s&quot;,&quot;msgTypeGame&quot;:&quot;Verdadero o falso&quot;,&quot;msgFeedback&quot;:&quot;Retroalimentación&quot;,&quot;msgSuggestion&quot;:&quot;Sugerencia&quot;,&quot;msgSolution&quot;:&quot;Solución&quot;,&quot;msgQuestion&quot;:&quot;Pregunta&quot;,&quot;msgTrue&quot;:&quot;Verdadero&quot;,&quot;msgFalse&quot;:&quot;Falso&quot;,&quot;msgOk&quot;:&quot;Correcto&quot;,&quot;msgKO&quot;:&quot;Incorrecto&quot;,&quot;msgShow&quot;:&quot;Mostrar&quot;,&quot;msgHide&quot;:&quot;Ocultar&quot;,&quot;msgCheck&quot;:&quot;Comprobar&quot;,&quot;msgReboot&quot;:&quot;¡Prueba otra vez!&quot;,&quot;msgScore&quot;:&quot;Puntuación&quot;,&quot;msgWeight&quot;:&quot;Peso&quot;,&quot;msgNext&quot;:&quot;Siguiente&quot;,&quot;msgPrevious&quot;:&quot;Anterior&quot;},&quot;questionsRandom&quot;:false,&quot;percentageQuestions&quot;:100,&quot;isTest&quot;:false,&quot;time&quot;:0,&quot;questionsGame&quot;:[{&quot;question&quot;:&quot;&lt;p&gt;Podemos abrir el proyecto los dos a la vez con el mismo código de regreso, así avanzamos el doble.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;No: App Inventor detecta dos sesiones sobre el mismo proyecto y puede vaciaros el área de bloques. Solo una persona lo tiene abierto; la otra trabaja sobre una copia importada.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;¿Qué cartel aparece si hay dos sesiones?&lt;/p&gt;&quot;,&quot;solution&quot;:0},{&quot;question&quot;:&quot;&lt;p&gt;Si sale un aviso de que hay otra sesión abierta, lo mejor es darle a continuar y seguir.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;Justo lo contrario: cerrad y avisad. Continuar es la vía rápida para perder el trabajo del día.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;¿Cuál es la red de seguridad que tenéis en Classroom?&lt;/p&gt;&quot;,&quot;solution&quot;:0},{&quot;question&quot;:&quot;&lt;p&gt;Aunque perdamos los bloques, siempre podemos volver al último .aia que subimos a Classroom.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;Para eso existe la rutina de exportar cada sesión: Proyectos → Importar proyecto (.aia) desde mi ordenador… y seguimos.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;¿Subisteis el .aia el día anterior?&lt;/p&gt;&quot;,&quot;solution&quot;:1}],&quot;isScorm&quot;:0,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;,&quot;repeatActivity&quot;:true,&quot;weighted&quot;:100,&quot;evaluation&quot;:false,&quot;evaluationID&quot;:&quot;&quot;,&quot;showSlider&quot;:false,&quot;ideviceId&quot;:&quot;idevice-1785241087790-e3vg9b660&quot;}" data-idevice-template="trueorfalse.html">
+<div class="exe-trueorfalse-container">
+  
+    <div class="game-evaluation-ids js-hidden" data-id="idevice-1785241087790-e3vg9b660" data-evaluationb="false" data-evaluationid=""></div>
+        <div class="TOFP-instructions"><p>Responde todas las preguntas del cuestionario.</p></div>
+        <div class="TOFP-MainContainer" data-instance="idevice-1785241087790-e3vg9b660" id="tofPMainContainer-idevice-1785241087790-e3vg9b660">
+            <div class="TOFP-GameContainer" id="tofPGameContainer-idevice-1785241087790-e3vg9b660">
+                <div class="TOFP-GameScoreBoard TOFP-EHidden">
+                    <div class="TOFP-TimeNumber">
+                        <strong><span class="sr-av">Tiempo por pregunta:</span></strong>
+                        <p id="tofPPTime-idevice-1785241087790-e3vg9b660" class="TOFP-PTime">00:00:</p>
+                    </div>
+                </div>
+                <div class="TOFP-MessgeDiv" id="tofPMessageDiv-idevice-1785241087790-e3vg9b660">
+                    <div class="TOFP-Message" id="tofPMessage-idevice-1785241087790-e3vg9b660"></div>
+                </div>
+                <div class="TOFP-StartGameDiv TOFP-EHidden" id="tofPStartGameDiv-idevice-1785241087790-e3vg9b660">
+                    <button  id="tofPStartGame-idevice-1785241087790-e3vg9b660" type="button" class="btn btn-primary">Pulsa aquí para empezar</button>
+                </div>
+                <div class="TOFP-Multimedia " id="tofPMultimedia-idevice-1785241087790-e3vg9b660">
+                </div>
+                <div class="TOFP-CheckTestDiv TOFP-EHidden" id="tofPCheckTestDiv-idevice-1785241087790-e3vg9b660">
+                    <button id="tofPCheckTest-idevice-1785241087790-e3vg9b660" type="button" class="btn btn-primary">Comprobar</button>
+                    <button id="tofRebootTest-idevice-1785241087790-e3vg9b660" type="button" class="btn btn-primary TOFP-EHidden">¡Prueba otra vez!</button>
+                </div>
+        </div> 
+        <div class="Games-BottonContainer">
+            <div class="Games-GetScore">
+                <input id="tofPSendScore-idevice-1785241087790-e3vg9b660" type="button" value="Guardar la puntuación" class="feedbackbutton Games-SendScore" style="display:none"/> <span class="Games-RepeatActivity"></span>
+            </div>
+        </div>
+        <div class="TOFP-After"></div>
+        <div class="questionsMedia" style="display:none"></div>
+</div>
+
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/s6-apps-iot.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/s8-app-propia-ii-y-demo.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class=""> <p> <span class="license-label">Licencia: </span><span class="license">creative commons: attribution - share alike</span></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(Ventana nueva)</span></span></a></p>
+</body>
+</html>

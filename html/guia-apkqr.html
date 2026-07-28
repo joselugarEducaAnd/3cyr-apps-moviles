@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-20260717160000PAGE09">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.2">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Guía APK→QR | Tu primera app: programa el móvil que llevas encima</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Unidad de desarrollo de apps móviles para 3.º de ESO (Computación y Robótica): programación orientada a eventos con App Inventor, sensores del dispositivo, entrada/salida, apps IoT y proyecto de app propia instalada en un móvil real.">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script>window.exeXapi={"odeId":"20260717160000AP3SDA04","packageTitle":"Tu primera app: programa el móvil que llevas encima","language":"es"};</script><script src="../libs/xapi/exe_xapi.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css"><link rel="stylesheet" href="../theme/zzz-majuelo.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#20260717160000PAGE09" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node no-ch">Inicio</a>
+</li>
+<li> <a href="../html/s1-una-app-por-dentro.html" class="no-ch">S1 · Una app por dentro</a>
+</li>
+<li> <a href="../html/s2-programacion-por-eventos.html" class="no-ch">S2 · Programación por eventos</a>
+</li>
+<li> <a href="../html/s3-primera-app-apkqr.html" class="no-ch">S3 · Primera app + APK→QR</a>
+</li>
+<li> <a href="../html/s4-sensores-del-movil.html" class="no-ch">S4 · Sensores del móvil</a>
+</li>
+<li> <a href="../html/s5-entradasalida.html" class="no-ch">S5 · Entrada/salida</a>
+</li>
+<li> <a href="../html/s6-apps-iot.html" class="no-ch">S6 · Apps IoT</a>
+</li>
+<li> <a href="../html/s7-app-propia-i.html" class="no-ch">S7 · App propia I</a>
+</li>
+<li> <a href="../html/s8-app-propia-ii-y-demo.html" class="no-ch">S8 · App propia II y demo</a>
+</li>
+<li class="active"> <a href="../html/guia-apkqr.html" class="active no-ch">Guía APK→QR</a>
+</li>
+<li> <a href="../html/chuleta-app-inventor.html" class="no-ch">Chuleta App Inventor</a>
+</li>
+</ul>
+</nav><main id="20260717160000PAGE09" class="page"> 
+<header class="main-header"> <p class="page-counter"> <span class="page-counter-label">Página </span><span class="page-counter-content"> <strong class="page-counter-current-page">10</strong><span class="page-counter-sep">/</span><strong class="page-counter-total">11</strong></span></p>
+
+<div class="package-header"><p class="package-title">Tu primera app: programa el móvil que llevas encima</p></div>
+<div class="page-header"><h1 class="page-title">Guía APK→QR</h1></div>
+</header><div id="page-content-20260717160000PAGE09" class="page-content">
+<article id="20260717160000BLK009" class="box no-header">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260717160000IDEV009" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260717160000IDEV009&quot;}">
+<div class="bloque bloque-teoria">
+  <p class="bloque-titulo">De App Inventor a tu móvil: el flujo APK→QR</p>
+  <p>Tu app se convierte en un archivo instalable (<strong>APK</strong>) que el móvil descarga
+  <strong>por internet con sus datos</strong> escaneando un código QR.
+  <strong>No hace falta la wifi del centro para nada.</strong> Esta guía es tu manual de
+  referencia: vuelve aquí cada vez que instales.</p>
+</div>
+
+<h2>Paso a paso</h2>
+<table class="tabla-datos">
+  <thead><tr><th>Paso</th><th>Dónde</th><th>Qué hacer</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>Ordenador</td><td>En App Inventor, menú <strong>Generar</strong> → <strong>«App (generar código QR para el archivo .apk)»</strong>. La compilación tarda 1-2 minutos: paciencia.</td></tr>
+    <tr><td>2</td><td>Ordenador</td><td>Al terminar aparece un <strong>código QR</strong>. El propio App Inventor avisa de que <em>«este código será válido las dos próximas horas»</em>: es un <strong>enlace de descarga temporal</strong> del APK. Pasadas las 2 h, basta recompilar.</td></tr>
+    <tr><td>3</td><td>Móvil</td><td>Con <strong>datos móviles activados</strong>, escanea el QR con la cámara. Se descarga el archivo <code>.apk</code> (mira la barra de notificaciones o la carpeta <em>Descargas</em>).</td></tr>
+    <tr><td>4</td><td>Móvil</td><td>Toca el archivo descargado para instalarlo. Android avisará porque la app no viene de Play Store: es <strong>normal</strong> (ver siguiente apartado).</td></tr>
+    <tr><td>5</td><td>Móvil</td><td>¡Instalada! Búscala por su nombre entre tus apps y pruébala. Cuando termine la unidad puedes desinstalarla como cualquier otra.</td></tr>
+  </tbody>
+</table>
+<p>La otra opción del mismo menú, <strong>«App (guardar archivo .apk en mi ordenador)»</strong>,
+descarga el APK al ordenador en vez de mostrar el QR: útil si quieres llevártelo a casa.</p>
+
+<h2>Los avisos de Android (y qué significan)</h2>
+<ul>
+  <li><strong>«Instalar aplicaciones desconocidas»:</strong> Android pide permiso para que la
+  cámara o el navegador instalen apps de fuera de Play Store. Se concede <strong>solo para esa
+  app</strong> (Ajustes te lo ofrece en el momento) y se puede retirar después.</li>
+  <li><strong>Aviso de Play Protect:</strong> puede analizarla o avisar de que no conoce la
+  app. Elige <strong>«Instalar de todos modos»</strong>: la app la habéis hecho vosotros y
+  sabéis exactamente qué contiene.</li>
+  <li><strong>Regla de seguridad seria:</strong> estos permisos existen porque instalar APK de
+  <strong>desconocidos</strong> es peligroso de verdad. Aquí instalas <strong>tu propia
+  app</strong>, compilada delante de ti. Nunca instales APK de otras fuentes.</li>
+</ul>
+
+<h2>Los permisos que pide TU app (y por qué)</h2>
+<p>Al abrirse por primera vez, tu app pedirá permisos según los componentes que lleve: el
+micrófono si usas reconocimiento de voz, la ubicación si usas el GPS, el almacenamiento si
+guarda archivos. <strong>Los pide porque tú se lo has puesto</strong>, no porque «espíe».</p>
+<p>Aprovecha para mirarlo al revés: cuando <em>otra</em> app te pide un permiso que no encaja
+con lo que hace (una linterna que quiere tus contactos), esa es exactamente la señal de alarma
+que trabajaste en la unidad de ciberseguridad. Ahora ya sabes de dónde salen esos permisos:
+de los componentes que alguien decidió meter en la app.</p>
+
+<h2>Si algo no va</h2>
+<table class="tabla-datos">
+  <thead><tr><th>Problema</th><th>Solución</th></tr></thead>
+  <tbody>
+    <tr><td>El QR no descarga nada</td><td>¿Datos móviles activados? ¿Han pasado más de 2 horas? Recompila y escanea el QR nuevo.</td></tr>
+    <tr><td>«El servidor de compilación está ocupado»</td><td>Es un servidor gratuito compartido con medio mundo. Espera un par de minutos y vuelve a darle a Generar; aprovecha para revisar bloques mientras tanto.</td></tr>
+    <tr><td>«Aplicación no instalada»</td><td>Casi siempre es que ya tienes instalada una versión anterior <strong>compilada desde otro código de regreso</strong> (por ejemplo, el de tu pareja): App Inventor firma cada APK con una llave distinta por sesión y Android no deja mezclarlas. Desinstala la versión anterior del móvil y vuelve a instalar. Y a partir de ahí, <strong>compilad siempre desde el mismo código de regreso</strong>.</td></tr>
+    <tr><td>No encuentro el APK descargado</td><td>Carpeta <em>Descargas</em> del móvil, o la notificación de descarga.</td></tr>
+    <tr><td>El sensor no responde</td><td>Pruébalo en un móvil real (el ordenador no tiene acelerómetro). Comprueba que el bloque usa el evento correcto (p. ej. <em>.Sacudido</em>).</td></tr>
+    <tr><td>Ha desaparecido todo lo que había en Bloques</td><td>Casi seguro que el proyecto estaba abierto en <strong>dos sesiones a la vez</strong> (tú y tu pareja con el mismo código de regreso). No sigas trabajando: avisa e importa el último <code>.aia</code> que subisteis a Classroom.</td></tr>
+  </tbody>
+</table>
+
+<h2>Alternativas si no hay móvil disponible</h2>
+<ul>
+  <li><strong>En la pareja:</strong> basta <strong>un</strong> Android con datos para probar;
+  los equipos se forman contando con ello.</li>
+  <li><strong>En casa:</strong> descarga el <code>.apk</code> desde tu proyecto (o
+  el <code>.aia</code> desde Classroom para seguir editando) y pruébalo con tu wifi de casa
+  con calma.</li>
+  <li><strong>Sin ningún Android</strong> (o para probar la lógica sin sensor):
+  <a href="https://code.org/applab" target="_blank" rel="noopener">App Lab de Code.org</a>
+  permite crear apps que se prueban <strong>en el navegador del móvil con un simple
+  enlace</strong>, sin instalar nada. Y en clase, recuerda el truco del botón alternativo que
+  simula el evento del sensor.</li>
+</ul>
+
+<div class="bloque bloque-nota">
+  <p class="bloque-titulo">Resumen en una frase</p>
+  <p><strong>Generar → QR → escanear con datos → permitir → instalar.</strong> Y el
+  <code>.aia</code> siempre a Classroom al acabar la sesión.</p>
+</div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/s8-app-propia-ii-y-demo.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/chuleta-app-inventor.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class=""> <p> <span class="license-label">Licencia: </span><span class="license">creative commons: attribution - share alike</span></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(Ventana nueva)</span></span></a></p>
+</body>
+</html>

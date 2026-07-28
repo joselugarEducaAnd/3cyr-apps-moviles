@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-20260717160000PAGE08">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.2">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>S8 · App propia II y demo | Tu primera app: programa el móvil que llevas encima</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Unidad de desarrollo de apps móviles para 3.º de ESO (Computación y Robótica): programación orientada a eventos con App Inventor, sensores del dispositivo, entrada/salida, apps IoT y proyecto de app propia instalada en un móvil real.">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script>window.exeXapi={"odeId":"20260717160000AP3SDA04","packageTitle":"Tu primera app: programa el móvil que llevas encima","language":"es"};</script><script src="../libs/xapi/exe_xapi.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css"><link rel="stylesheet" href="../theme/zzz-majuelo.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#20260717160000PAGE08" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node no-ch">Inicio</a>
+</li>
+<li> <a href="../html/s1-una-app-por-dentro.html" class="no-ch">S1 · Una app por dentro</a>
+</li>
+<li> <a href="../html/s2-programacion-por-eventos.html" class="no-ch">S2 · Programación por eventos</a>
+</li>
+<li> <a href="../html/s3-primera-app-apkqr.html" class="no-ch">S3 · Primera app + APK→QR</a>
+</li>
+<li> <a href="../html/s4-sensores-del-movil.html" class="no-ch">S4 · Sensores del móvil</a>
+</li>
+<li> <a href="../html/s5-entradasalida.html" class="no-ch">S5 · Entrada/salida</a>
+</li>
+<li> <a href="../html/s6-apps-iot.html" class="no-ch">S6 · Apps IoT</a>
+</li>
+<li> <a href="../html/s7-app-propia-i.html" class="no-ch">S7 · App propia I</a>
+</li>
+<li class="active"> <a href="../html/s8-app-propia-ii-y-demo.html" class="active no-ch">S8 · App propia II y demo</a>
+</li>
+<li> <a href="../html/guia-apkqr.html" class="no-ch">Guía APK→QR</a>
+</li>
+<li> <a href="../html/chuleta-app-inventor.html" class="no-ch">Chuleta App Inventor</a>
+</li>
+</ul>
+</nav><main id="20260717160000PAGE08" class="page"> 
+<header class="main-header"> <p class="page-counter"> <span class="page-counter-label">Página </span><span class="page-counter-content"> <strong class="page-counter-current-page">9</strong><span class="page-counter-sep">/</span><strong class="page-counter-total">11</strong></span></p>
+
+<div class="package-header"><p class="package-title">Tu primera app: programa el móvil que llevas encima</p></div>
+<div class="page-header"><h1 class="page-title">S8 · App propia II y demo</h1></div>
+</header><div id="page-content-20260717160000PAGE08" class="page-content">
+<article id="20260717160000BLK008" class="box no-header">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260717160000IDEV008" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260717160000IDEV008&quot;}">
+<div class="bloque bloque-teoria">
+  <p class="bloque-titulo">Rematar, instalar, demostrar</p>
+  <p>Última sesión de proyecto: hoy vuestra app tiene que quedar <strong>terminada, instalada
+  en un móvil real y demostrada</strong> ante la clase. Una app que solo funciona en el
+  ordenador de quien la hizo es una app a medias.</p>
+</div>
+
+<h2>1 · Remate fino</h2>
+<ul>
+  <li>Revisad los <strong>requisitos mínimos</strong> de la S7: 2 pantallas, eventos, sensor,
+  interfaz ordenada. Lo que falte, hoy.</li>
+  <li>Cazad errores: campos vacíos, botones que no hacen nada, textos cortados.</li>
+  <li>Últimos detalles que dan calidad: icono de la app (Diseñador → Screen1 →
+  propiedad <em>Icono</em>), nombre visible de la app y pantalla «Acerca de» con vuestros
+  papeles en el proyecto.</li>
+</ul>
+
+<h2>2 · Instalación en dispositivo real</h2>
+<p>Seguid la <a href="../html/guia-apkqr.html">guía APK→QR</a>: <strong>Generar → «App (generar código
+QR para el archivo .apk)»</strong>, escanear con datos móviles e instalar en al menos un móvil
+de la pareja. Comprobad <strong>especialmente el sensor</strong> (en el móvil real, no en el
+ordenador). Recordad: <strong>compilad desde el mismo código de regreso</strong> de siempre.</p>
+
+<h2>3 · La demo (2-3 minutos)</h2>
+<table class="tabla-datos">
+  <thead><tr><th>Momento</th><th>Qué contáis</th></tr></thead>
+  <tbody>
+    <tr><td>La necesidad</td><td>Qué problema resuelve y para quién (30 s)</td></tr>
+    <tr><td>La demo</td><td>La app funcionando <strong>en el móvil</strong>: pantallas, eventos y el sensor en acción (90 s)</td></tr>
+    <tr><td>La cocina</td><td>Un bloque del que estéis orgullosos y un problema que superasteis (30 s)</td></tr>
+  </tbody>
+</table>
+
+<div class="bloque bloque-actividad">
+  <p class="bloque-titulo">Tarea S8 · Entrega final del proyecto</p>
+  <p>En la tarea <strong>«App propia + demo»</strong> de Classroom, <strong>cada miembro</strong> de la pareja sube:</p>
+  <ol>
+    <li><code>app_propia.aia</code> (versión final).</li>
+    <li><code>demo_app.mp4</code> <strong>o</strong> 3-4 capturas/fotos de la app funcionando
+    en el móvil (si la demo fue en directo, valen fotos del momento).</li>
+    <li>La <strong>ficha de plan</strong> actualizada, con sus dos últimos apartados:
+    <ul>
+      <li><strong>Qué cambió</strong> respecto al plan inicial y por qué (es normal que cambie;
+      contadlo).</li>
+      <li><strong>Qué reutilizaríais:</strong> señalad <strong>una parte de vuestra app</strong>
+      (un manejador, una pantalla, una forma de organizar los datos) que serviría
+      <strong>tal cual en una app distinta</strong>, y decid en cuál. Programar bien es, sobre
+      todo, resolver un problema de forma que la solución valga para más de un caso.</li>
+    </ul></li>
+  </ol>
+  <p>Recordad: nombres de archivo <strong>exactos</strong>, sin vuestros nombres en ellos.</p>
+</div>
+
+<div class="bloque bloque-dua">
+  <p class="bloque-titulo">¿Vas sobrado/a?</p>
+  <p>Publicad una <strong>versión 2</strong>: recoged una mejora que os pidan en la demo,
+  implementadla y generad un nuevo APK. Así se sienten las actualizaciones de verdad.</p>
+</div>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/s7-app-propia-i.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/guia-apkqr.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class=""> <p> <span class="license-label">Licencia: </span><span class="license">creative commons: attribution - share alike</span></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(Ventana nueva)</span></span></a></p>
+</body>
+</html>

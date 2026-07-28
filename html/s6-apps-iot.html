@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-20260717160000PAGE06">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.2">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>S6 · Apps IoT | Tu primera app: programa el móvil que llevas encima</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<meta name="description" content="Unidad de desarrollo de apps móviles para 3.º de ESO (Computación y Robótica): programación orientada a eventos con App Inventor, sensores del dispositivo, entrada/salida, apps IoT y proyecto de app propia instalada en un móvil real.">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script>window.exeXapi={"odeId":"20260717160000AP3SDA04","packageTitle":"Tu primera app: programa el móvil que llevas encima","language":"es"};</script><script src="../libs/xapi/exe_xapi.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<script src="../idevices/trueorfalse/trueorfalse.js"></script><link rel="stylesheet" href="../idevices/trueorfalse/trueorfalse.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css"><link rel="stylesheet" href="../theme/zzz-majuelo.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#20260717160000PAGE06" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node no-ch">Inicio</a>
+</li>
+<li> <a href="../html/s1-una-app-por-dentro.html" class="no-ch">S1 · Una app por dentro</a>
+</li>
+<li> <a href="../html/s2-programacion-por-eventos.html" class="no-ch">S2 · Programación por eventos</a>
+</li>
+<li> <a href="../html/s3-primera-app-apkqr.html" class="no-ch">S3 · Primera app + APK→QR</a>
+</li>
+<li> <a href="../html/s4-sensores-del-movil.html" class="no-ch">S4 · Sensores del móvil</a>
+</li>
+<li> <a href="../html/s5-entradasalida.html" class="no-ch">S5 · Entrada/salida</a>
+</li>
+<li class="active"> <a href="../html/s6-apps-iot.html" class="active no-ch">S6 · Apps IoT</a>
+</li>
+<li> <a href="../html/s7-app-propia-i.html" class="no-ch">S7 · App propia I</a>
+</li>
+<li> <a href="../html/s8-app-propia-ii-y-demo.html" class="no-ch">S8 · App propia II y demo</a>
+</li>
+<li> <a href="../html/guia-apkqr.html" class="no-ch">Guía APK→QR</a>
+</li>
+<li> <a href="../html/chuleta-app-inventor.html" class="no-ch">Chuleta App Inventor</a>
+</li>
+</ul>
+</nav><main id="20260717160000PAGE06" class="page"> 
+<header class="main-header"> <p class="page-counter"> <span class="page-counter-label">Página </span><span class="page-counter-content"> <strong class="page-counter-current-page">7</strong><span class="page-counter-sep">/</span><strong class="page-counter-total">11</strong></span></p>
+
+<div class="package-header"><p class="package-title">Tu primera app: programa el móvil que llevas encima</p></div>
+<div class="page-header"><h1 class="page-title">S6 · Apps IoT</h1></div>
+</header><div id="page-content-20260717160000PAGE06" class="page-content">
+<article id="20260717160000BLK006" class="box no-header">
+<header class="box-head no-icon">
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="20260717160000IDEV006" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;20260717160000IDEV006&quot;}">
+<div class="bloque bloque-teoria">
+  <p class="bloque-titulo">Apps IoT: el móvil como panel de control</p>
+  <p>Muchas de las apps más útiles no viven solas: <strong>hablan con otros dispositivos</strong>.
+  La app de una pulsera de actividad, la que enciende las luces de casa o la que te enseña la
+  cámara del timbre son <strong>apps IoT</strong> (Internet de las Cosas): el móvil actúa de
+  <strong>panel de control y visualización</strong> de aparatos conectados.</p>
+</div>
+
+<h2>Cómo funciona una app IoT</h2>
+<svg viewBox="0 0 760 250" role="img" aria-label="Arquitectura de una app IoT: los dispositivos envían datos a la nube y la app del móvil los muestra y envía órdenes de vuelta" style="max-width:760px;width:100%;height:auto;display:block;margin:0.8em auto;"><defs><marker id="f2" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#666"/></marker></defs><rect x="6" y="28" width="196" height="56" rx="10" fill="#eef4ee" stroke="#2e8b57" stroke-width="2.5"/><text x="104" y="51" text-anchor="middle" font-family="Verdana, 'DejaVu Sans', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1f6e43">Sensor de temperatura</text><text x="104" y="70" text-anchor="middle" font-family="Verdana, 'DejaVu Sans', Arial, sans-serif" font-size="11" fill="#444">salón de casa</text><rect x="6" y="100" width="196" height="56" rx="10" fill="#eef4ee" stroke="#2e8b57" stroke-width="2.5"/><text x="104" y="123" text-anchor="middle" font-family="Verdana, 'DejaVu Sans', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1f6e43">Enchufe inteligente</text><text x="104" y="142" text-anchor="middle" font-family="Verdana, 'DejaVu Sans', Arial, sans-serif" font-size="11" fill="#444">estufa</text><rect x="6" y="172" width="196" height="56" rx="10" fill="#eef4ee" stroke="#2e8b57" stroke-width="2.5"/><text x="104" y="195" text-anchor="middle" font-family="Verdana, 'DejaVu Sans', Arial, sans-serif" font-size="12" font-weight="bold" fill="#1f6e43">Cámara / timbre</text><text x="104" y="214" text-anchor="middle" font-family="Verdana, 'DejaVu Sans', Arial, sans-serif" font-size="11" fill="#444">puerta</text><line x1="207" y1="56" x2="300" y2="112" stroke="#666" stroke-width="2.5" marker-end="url(#f2)"/><line x1="207" y1="128" x2="300" y2="128" stroke="#666" stroke-width="2.5" marker-end="url(#f2)"/><line x1="207" y1="200" x2="300" y2="144" stroke="#666" stroke-width="2.5" marker-end="url(#f2)"/><ellipse cx="388" cy="128" rx="82" ry="52" fill="#e8eef7" stroke="#3f71b5" stroke-width="3"/><text x="388" y="122" text-anchor="middle" font-family="Verdana, 'DejaVu Sans', Arial, sans-serif" font-size="14" font-weight="bold" fill="#2f568a">NUBE</text><text x="388" y="143" text-anchor="middle" font-family="Verdana, 'DejaVu Sans', Arial, sans-serif" font-size="11" fill="#444">guarda y reenvía datos</text><line x1="474" y1="140" x2="566" y2="140" stroke="#666" stroke-width="2.5" marker-end="url(#f2)"/><line x1="566" y1="116" x2="474" y2="116" stroke="#666" stroke-width="2.5" marker-end="url(#f2)"/><rect x="576" y="18" width="150" height="204" rx="16" fill="#fff" stroke="#453f93" stroke-width="3.5"/><rect x="590" y="34" width="122" height="28" rx="5" fill="#453f93"/><text x="651" y="53" text-anchor="middle" font-family="Verdana, 'DejaVu Sans', Arial, sans-serif" font-size="12" font-weight="bold" fill="#fff">MI CASA</text><rect x="590" y="72" width="122" height="32" rx="5" fill="#eef4ee" stroke="#2e8b57" stroke-width="1.5"/><text x="651" y="93" text-anchor="middle" font-family="Verdana, 'DejaVu Sans', Arial, sans-serif" font-size="12" fill="#1f6e43">21,5 °C</text><rect x="590" y="114" width="122" height="32" rx="5" fill="#fdf3dc" stroke="#d19a1e" stroke-width="1.5"/><text x="651" y="135" text-anchor="middle" font-family="Verdana, 'DejaVu Sans', Arial, sans-serif" font-size="12" fill="#7a5a0e">Estufa: ON</text><rect x="590" y="156" width="122" height="32" rx="5" fill="#f6e9f1" stroke="#b0397c" stroke-width="1.5"/><text x="651" y="177" text-anchor="middle" font-family="Verdana, 'DejaVu Sans', Arial, sans-serif" font-size="12" fill="#8d2c63">Ver cámara</text><text x="651" y="240" text-anchor="middle" font-family="Verdana, 'DejaVu Sans', Arial, sans-serif" font-size="11" fill="#666">la app: panel de control</text></svg>
+<p>Los papeles de cada pieza:</p>
+<ul>
+  <li><strong>Dispositivos</strong> (sensores y actuadores): miden y actúan en el mundo físico.
+  Generan <strong>eventos y datos</strong> («la temperatura ha bajado de 20 °C»).</li>
+  <li><strong>La nube</strong>: recibe, guarda y reenvía esos datos, para que lleguen al móvil
+  estés donde estés.</li>
+  <li><strong>La app</strong>: <strong>visualiza</strong> los datos (temperatura, gráficas,
+  cámaras) y <strong>envía órdenes</strong> («enciende la estufa»), que hacen el camino
+  inverso.</li>
+</ul>
+<p>¿Te suena el esquema? Es el modelo <strong>evento→respuesta</strong> otra vez, pero los
+eventos pueden nacer <strong>fuera del móvil</strong>: en un sensor a kilómetros de distancia.
+En la unidad de <strong>Arduino e IoT</strong> trabajarás la otra mitad del sistema (las placas
+y sensores que generan esos datos): esta sesión y aquella son las dos caras de la misma
+moneda.</p>
+
+<h2>Analiza como diseñador/a</h2>
+<p>Una buena app IoT se reconoce por su panel: información clara de un vistazo, controles
+grandes para las acciones frecuentes y avisos solo cuando importan. Piensa en la app de un
+termostato: ¿qué muestra primero? ¿qué puedes tocar? ¿cuándo te avisa sola?</p>
+
+<div class="bloque bloque-actividad">
+  <p class="bloque-titulo">Tarea S6 · Diseña un panel IoT (maqueta)</p>
+  <p>En pareja, proyecto <code>s6_panel</code>: construiréis en el Diseñador la
+  <strong>maqueta</strong> (solo interfaz, sin conexión real) del panel de una app IoT a
+  elegir: invernadero del insti, habitación domótica, mascota con collar inteligente…</p>
+  <ol>
+    <li>Decidid: ¿qué 3 datos muestra el panel? ¿qué 2 órdenes permite enviar?</li>
+    <li>Montad la pantalla: etiquetas para los datos (con valores inventados), botones o
+    deslizadores para las órdenes, y una disposición ordenada.</li>
+    <li>Programad un toque de vida: al pulsar cada botón de orden, un Notificador confirma
+    («Orden enviada al invernadero») y cambia la etiqueta correspondiente.</li>
+    <li>En la <strong>ficha de respuestas</strong> (individual): dibujad el camino de un dato
+    desde el sensor hasta vuestro panel, y el de una orden de vuelta.</li>
+    <li><strong>Cierre de sesión:</strong> exportad <code>s6_panel.aia</code> y subid cada uno
+    ficha + <code>.aia</code> a la tarea <strong>«Tareas guiadas de apps»</strong> de Classroom. <strong>Con esto se cierra
+    esa tarea</strong>: es la última entrega que va ahí.</li>
+  </ol>
+</div>
+
+<div class="bloque bloque-nota">
+  <p class="bloque-titulo">Cuestionario de la unidad</p>
+  <p>Al final de esta sesión harás el <strong>cuestionario de programación orientada a
+  eventos</strong>: eventos, modelo evento→respuesta, IDE, componentes y apps IoT. Está en su
+  propia tarea <strong>«Cuestionario: programación por eventos»</strong> de Classroom, se responde
+  <strong>una sola vez</strong> y es individual. Repasa antes la
+  <a href="../html/chuleta-app-inventor.html">chuleta</a>.</p>
+</div>
+
+<div class="bloque bloque-dua">
+  <p class="bloque-titulo">¿Vas sobrado/a?</p>
+  <p>Investiga una app IoT real que uses o conozcas: ¿qué protocolo usa el dispositivo para
+  comunicarse (wifi, Bluetooth, otro)? ¿Los datos pasan por la nube o van directos al móvil?</p>
+</div>
+</div>
+</div>
+</article><article id="block-ms4mcfr2-gn7rdw7tw" class="box">
+<header class="box-head no-icon">
+<h1 class="box-title">Verdadero o falso</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-1785240912061-mau5xefuv" class="idevice_node trueorfalse" data-idevice-path="../idevices/trueorfalse/" data-idevice-type="trueorfalse" data-idevice-component-type="json" data-idevice-json-data="{&quot;id&quot;:&quot;idevice-1785240912061-mau5xefuv&quot;,&quot;typeGame&quot;:&quot;TrueOrFalse&quot;,&quot;eXeGameInstructions&quot;:&quot;&lt;p&gt;Responde todas las preguntas del cuestionario.&lt;/p&gt;&quot;,&quot;eXeIdeviceTextAfter&quot;:&quot;&quot;,&quot;msgs&quot;:{&quot;msgStartGame&quot;:&quot;Pulsa aquí para empezar&quot;,&quot;msgTime&quot;:&quot;Tiempo por pregunta&quot;,&quot;msgNoImage&quot;:&quot;Pregunta sin imágenes&quot;,&quot;msgScoreScorm&quot;:&quot;La puntuación no se puede guardar porque esta página no forma parte  de un paquete SCORM.&quot;,&quot;msgEndGameScore&quot;:&quot;Comience la partida antes de guardar la puntuación.&quot;,&quot;msgOnlySaveScore&quot;:&quot;¡Solo puede guardar la puntuación una vez!&quot;,&quot;msgOnlySave&quot;:&quot;Solo puede guardar una vez&quot;,&quot;msgYouScore&quot;:&quot;Su puntuación&quot;,&quot;msgAuthor&quot;:&quot;Autoría&quot;,&quot;msgOnlySaveAuto&quot;:&quot;Su puntuación se guardará después de cada pregunta. Solo puede jugar una vez.&quot;,&quot;msgSaveAuto&quot;:&quot;Su puntuación se guardará automáticamente después de cada pregunta.&quot;,&quot;msgSeveralScore&quot;:&quot;Puede guardar la puntuación tantas veces como quiera&quot;,&quot;msgYouLastScore&quot;:&quot;La última puntuación guardada es&quot;,&quot;msgActityComply&quot;:&quot;Ya ha realizado esta actividad.&quot;,&quot;msgPlaySeveralTimes&quot;:&quot;Puede realizar esta actividad cuantas veces quiera&quot;,&quot;msgUncompletedActivity&quot;:&quot;Actividad no completada&quot;,&quot;msgSuccessfulActivity&quot;:&quot;Actividad superada. Puntuación: %s&quot;,&quot;msgUnsuccessfulActivity&quot;:&quot;Actividad no superada. Puntuación: %s&quot;,&quot;msgTypeGame&quot;:&quot;Verdadero o falso&quot;,&quot;msgFeedback&quot;:&quot;Retroalimentación&quot;,&quot;msgSuggestion&quot;:&quot;Sugerencia&quot;,&quot;msgSolution&quot;:&quot;Solución&quot;,&quot;msgQuestion&quot;:&quot;Pregunta&quot;,&quot;msgTrue&quot;:&quot;Verdadero&quot;,&quot;msgFalse&quot;:&quot;Falso&quot;,&quot;msgOk&quot;:&quot;Correcto&quot;,&quot;msgKO&quot;:&quot;Incorrecto&quot;,&quot;msgShow&quot;:&quot;Mostrar&quot;,&quot;msgHide&quot;:&quot;Ocultar&quot;,&quot;msgCheck&quot;:&quot;Comprobar&quot;,&quot;msgReboot&quot;:&quot;¡Prueba otra vez!&quot;,&quot;msgScore&quot;:&quot;Puntuación&quot;,&quot;msgWeight&quot;:&quot;Peso&quot;,&quot;msgNext&quot;:&quot;Siguiente&quot;,&quot;msgPrevious&quot;:&quot;Anterior&quot;},&quot;questionsRandom&quot;:false,&quot;percentageQuestions&quot;:100,&quot;isTest&quot;:false,&quot;time&quot;:0,&quot;questionsGame&quot;:[{&quot;question&quot;:&quot;&lt;p&gt;En una app IoT, el móvil suele hacer de panel de control y visualización.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;Ese es su papel: mostrar datos de los dispositivos y enviarles órdenes.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;Recuerda el esquema sensor→nube→app.&lt;/p&gt;&quot;,&quot;solution&quot;:1},{&quot;question&quot;:&quot;&lt;p&gt;Los datos del sensor llegan a la app casi siempre pasando por la nube.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;La nube guarda y reenvía: por eso ves tu casa desde cualquier sitio.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;¿Dónde se guardan los datos?&lt;/p&gt;&quot;,&quot;solution&quot;:1},{&quot;question&quot;:&quot;&lt;p&gt;Una orden enviada desde la app viaja directamente del móvil al aparato, sin red.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;Hace el camino inverso por la red y la nube hasta el dispositivo.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;Es el mismo esquema, al revés.&lt;/p&gt;&quot;,&quot;solution&quot;:0},{&quot;question&quot;:&quot;&lt;p&gt;El modelo evento→respuesta también vale cuando el evento nace fuera del móvil.&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;Exacto: «la temperatura bajó de 20 °C» es un evento aunque ocurra a kilómetros.&lt;/p&gt;&quot;,&quot;suggestion&quot;:&quot;&lt;p&gt;¿Qué era un evento de sistema/red?&lt;/p&gt;&quot;,&quot;solution&quot;:1}],&quot;isScorm&quot;:0,&quot;textButtonScorm&quot;:&quot;Guardar la puntuación&quot;,&quot;repeatActivity&quot;:true,&quot;weighted&quot;:100,&quot;evaluation&quot;:false,&quot;evaluationID&quot;:&quot;&quot;,&quot;showSlider&quot;:false,&quot;ideviceId&quot;:&quot;idevice-1785240912061-mau5xefuv&quot;}" data-idevice-template="trueorfalse.html">
+<div class="exe-trueorfalse-container">
+  
+    <div class="game-evaluation-ids js-hidden" data-id="idevice-1785240912061-mau5xefuv" data-evaluationb="false" data-evaluationid=""></div>
+        <div class="TOFP-instructions"><p>Responde todas las preguntas del cuestionario.</p></div>
+        <div class="TOFP-MainContainer" data-instance="idevice-1785240912061-mau5xefuv" id="tofPMainContainer-idevice-1785240912061-mau5xefuv">
+            <div class="TOFP-GameContainer" id="tofPGameContainer-idevice-1785240912061-mau5xefuv">
+                <div class="TOFP-GameScoreBoard TOFP-EHidden">
+                    <div class="TOFP-TimeNumber">
+                        <strong><span class="sr-av">Tiempo por pregunta:</span></strong>
+                        <p id="tofPPTime-idevice-1785240912061-mau5xefuv" class="TOFP-PTime">00:00:</p>
+                    </div>
+                </div>
+                <div class="TOFP-MessgeDiv" id="tofPMessageDiv-idevice-1785240912061-mau5xefuv">
+                    <div class="TOFP-Message" id="tofPMessage-idevice-1785240912061-mau5xefuv"></div>
+                </div>
+                <div class="TOFP-StartGameDiv TOFP-EHidden" id="tofPStartGameDiv-idevice-1785240912061-mau5xefuv">
+                    <button  id="tofPStartGame-idevice-1785240912061-mau5xefuv" type="button" class="btn btn-primary">Pulsa aquí para empezar</button>
+                </div>
+                <div class="TOFP-Multimedia " id="tofPMultimedia-idevice-1785240912061-mau5xefuv">
+                </div>
+                <div class="TOFP-CheckTestDiv TOFP-EHidden" id="tofPCheckTestDiv-idevice-1785240912061-mau5xefuv">
+                    <button id="tofPCheckTest-idevice-1785240912061-mau5xefuv" type="button" class="btn btn-primary">Comprobar</button>
+                    <button id="tofRebootTest-idevice-1785240912061-mau5xefuv" type="button" class="btn btn-primary TOFP-EHidden">¡Prueba otra vez!</button>
+                </div>
+        </div> 
+        <div class="Games-BottonContainer">
+            <div class="Games-GetScore">
+                <input id="tofPSendScore-idevice-1785240912061-mau5xefuv" type="button" value="Guardar la puntuación" class="feedbackbutton Games-SendScore" style="display:none"/> <span class="Games-RepeatActivity"></span>
+            </div>
+        </div>
+        <div class="TOFP-After"></div>
+        <div class="questionsMedia" style="display:none"></div>
+</div>
+
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/s5-entradasalida.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/s7-app-propia-i.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class=""> <p> <span class="license-label">Licencia: </span><span class="license">creative commons: attribution - share alike</span></p>
+</div>
+</div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(Ventana nueva)</span></span></a></p>
+</body>
+</html>
