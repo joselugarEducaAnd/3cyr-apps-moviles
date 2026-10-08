@@ -63,15 +63,15 @@
 <table class="tabla-datos">
   <thead><tr><th>Paso</th><th>Dónde</th><th>Qué hacer</th></tr></thead>
   <tbody>
-    <tr><td>1</td><td>Ordenador</td><td>En App Inventor, menú <strong>Generar</strong> → <strong>«App (generar código QR para el archivo .apk)»</strong>. La compilación tarda 1-2 minutos: paciencia.</td></tr>
+    <tr><td>1</td><td>Ordenador</td><td>En App Inventor, menú <strong>Generar</strong> → <strong>«App de Android (.apk)»</strong>. La compilación tarda 1-2 minutos: paciencia.</td></tr>
     <tr><td>2</td><td>Ordenador</td><td>Al terminar aparece un <strong>código QR</strong>. El propio App Inventor avisa de que <em>«este código será válido las dos próximas horas»</em>: es un <strong>enlace de descarga temporal</strong> del APK. Pasadas las 2 h, basta recompilar.</td></tr>
     <tr><td>3</td><td>Móvil</td><td>Con <strong>datos móviles activados</strong>, escanea el QR con la cámara. Se descarga el archivo <code>.apk</code> (mira la barra de notificaciones o la carpeta <em>Descargas</em>).</td></tr>
     <tr><td>4</td><td>Móvil</td><td>Toca el archivo descargado para instalarlo. Android avisará porque la app no viene de Play Store: es <strong>normal</strong> (ver siguiente apartado).</td></tr>
     <tr><td>5</td><td>Móvil</td><td>¡Instalada! Búscala por su nombre entre tus apps y pruébala. Cuando termine la unidad puedes desinstalarla como cualquier otra.</td></tr>
   </tbody>
 </table>
-<p>La otra opción del mismo menú, <strong>«App (guardar archivo .apk en mi ordenador)»</strong>,
-descarga el APK al ordenador en vez de mostrar el QR: útil si quieres llevártelo a casa.</p>
+<p>En la misma ventana del QR tienes el botón <strong>«Descargar .apk ahora»</strong>,
+que guarda el APK en el ordenador: útil si quieres llevártelo a casa.</p>
 
 <h2>Los avisos de Android (y qué significan)</h2>
 <ul>
@@ -103,7 +103,7 @@ de los componentes que alguien decidió meter en la app.</p>
     <tr><td>«El servidor de compilación está ocupado»</td><td>Es un servidor gratuito compartido con medio mundo. Espera un par de minutos y vuelve a darle a Generar; aprovecha para revisar bloques mientras tanto.</td></tr>
     <tr><td>«Aplicación no instalada»</td><td>Casi siempre es que ya tienes instalada una versión anterior <strong>compilada desde otro código de regreso</strong> (por ejemplo, el de tu pareja): App Inventor firma cada APK con una llave distinta por sesión y Android no deja mezclarlas. Desinstala la versión anterior del móvil y vuelve a instalar. Y a partir de ahí, <strong>compilad siempre desde el mismo código de regreso</strong>.</td></tr>
     <tr><td>No encuentro el APK descargado</td><td>Carpeta <em>Descargas</em> del móvil, o la notificación de descarga.</td></tr>
-    <tr><td>El sensor no responde</td><td>Pruébalo en un móvil real (el ordenador no tiene acelerómetro). Comprueba que el bloque usa el evento correcto (p. ej. <em>.Sacudido</em>).</td></tr>
+    <tr><td>El sensor no responde</td><td>Pruébalo en un móvil real (el ordenador no tiene acelerómetro). Comprueba que el bloque usa el evento correcto (p. ej. <em>.Agitar</em>).</td></tr>
     <tr><td>Ha desaparecido todo lo que había en Bloques</td><td>Casi seguro que el proyecto estaba abierto en <strong>dos sesiones a la vez</strong> (tú y tu pareja con el mismo código de regreso). No sigas trabajando: avisa e importa el último <code>.aia</code> que subisteis a Classroom.</td></tr>
   </tbody>
 </table>

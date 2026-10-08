@@ -79,10 +79,10 @@ componente); los demás, en <strong>Bloques → Integrados</strong>.</p>
 <table class="tabla-datos">
   <thead><tr><th>Bloque</th><th>Color / dónde está</th><th>Ejemplo de uso</th></tr></thead>
   <tbody>
-    <tr><td>cuando <em>Componente.Evento</em> ejecutar</td><td>Dorado · bloques del componente</td><td>cuando BotonHabla.Clic · cuando SensorDeAceleración1.Sacudido</td></tr>
-    <tr><td>llamar <em>Componente.Método</em></td><td>Morado · bloques del componente</td><td>llamar TextoAVoz1.Decir · llamar Notificador1.MostrarAlerta</td></tr>
+    <tr><td>cuando <em>Componente.Evento</em> ejecutar</td><td>Dorado · bloques del componente</td><td>cuando BotonHabla.Clic · cuando SensorAcelerómetro1.Agitar</td></tr>
+    <tr><td>llamar <em>Componente.Método</em></td><td>Morado · bloques del componente</td><td>llamar TextoAVoz1.Hablar · llamar Notificador1.MostrarAlerta</td></tr>
     <tr><td>poner <em>Componente.Propiedad</em> como</td><td>Verde · bloques del componente</td><td>poner EtiquetaDado.Texto como…</td></tr>
-    <tr><td>si / entonces / si no</td><td>Dorado · Integrados → <strong>Control</strong></td><td>si el campo está vacío → pedir el nombre</td></tr>
+    <tr><td>si / entonces / si no <em>(en pantalla, «else»)</em></td><td>Dorado · Integrados → <strong>Control</strong></td><td>si el campo está vacío → pedir el nombre</td></tr>
     <tr><td>entero aleatorio entre <em>a</em> y <em>b</em></td><td>Azul · Integrados → <strong>Matemáticas</strong></td><td>el dado: aleatorio entre 1 y 6</td></tr>
     <tr><td>unir · «está vacío» · comparar textos</td><td>Magenta · Integrados → <strong>Texto</strong></td><td>unir «Hola, » y CampoNombre.Texto</td></tr>
   </tbody>
@@ -92,10 +92,10 @@ componente); los demás, en <strong>Bloques → Integrados</strong>.</p>
 <table class="tabla-datos">
   <thead><tr><th>Componente (inglés)</th><th>Evento estrella</th><th>Para…</th></tr></thead>
   <tbody>
-    <tr><td>SensorDeAceleración <em>(AccelerometerSensor)</em></td><td>.Sacudido · .CambioEnAceleración</td><td>Agitar, detectar movimiento</td></tr>
-    <tr><td>SensorDeUbicación <em>(LocationSensor)</em></td><td>.CambioDeUbicación</td><td>Posición GPS</td></tr>
-    <tr><td>SensorDeOrientación <em>(OrientationSensor)</em></td><td>.CambioDeOrientación</td><td>Brújula, inclinación</td></tr>
-    <tr><td>SensorDeProximidad <em>(ProximitySensor)</em></td><td>.CambioEnProximidad</td><td>Detectar un objeto muy cerca del móvil</td></tr>
+    <tr><td>SensorAcelerómetro <em>(AccelerometerSensor)</em></td><td>.Agitar · .CambioEnAceleración</td><td>Agitar, detectar movimiento</td></tr>
+    <tr><td>SensorDeUbicación <em>(LocationSensor)</em></td><td>.CambioEnUbicación</td><td>Posición GPS</td></tr>
+    <tr><td>SensorDeOrientación <em>(OrientationSensor)</em></td><td>.CambioEnOrientación</td><td>Brújula, inclinación</td></tr>
+    <tr><td>SensorProximidad <em>(ProximitySensor)</em></td><td>.ProximidadCambiada</td><td>Detectar un objeto muy cerca del móvil</td></tr>
     <tr><td>Reloj <em>(Clock)</em></td><td>.Temporizador</td><td>Eventos de tiempo (cada X ms)</td></tr>
   </tbody>
 </table>
@@ -112,10 +112,10 @@ componente); los demás, en <strong>Bloques → Integrados</strong>.</p>
   <thead><tr><th>Necesito…</th><th>Cómo</th></tr></thead>
   <tbody>
     <tr><td>Volver a mis proyectos</td><td><a href="https://code.appinventor.mit.edu" target="_blank" rel="noopener">code.appinventor.mit.edu</a> → introducir mi <strong>código de regreso</strong> (4 palabras)</td></tr>
-    <tr><td>Poner la interfaz en español</td><td>Botón <strong>Idioma</strong> de la barra superior</td></tr>
+    <tr><td>Poner la interfaz en español</td><td>Menú del <strong>globo</strong> de la barra superior → <strong>Español</strong></td></tr>
     <tr><td>Copia de seguridad (cada sesión)</td><td><strong>Proyectos → «Exportar a mi ordenador el proyecto (.aia) seleccionado»</strong> → subir a Classroom</td></tr>
     <tr><td>Recuperar una copia</td><td><strong>Proyectos → «Importar proyecto (.aia) desde mi ordenador…»</strong></td></tr>
-    <tr><td>Instalar en el móvil</td><td><a href="../html/guia-apkqr.html">Guía APK→QR</a>: <strong>Generar → «App (generar código QR para el archivo .apk)»</strong> → escanear con datos</td></tr>
+    <tr><td>Instalar en el móvil</td><td><a href="../html/guia-apkqr.html">Guía APK→QR</a>: <strong>Generar → «App de Android (.apk)»</strong> → escanear con datos</td></tr>
     <tr><td>Probar sin móvil</td><td>Botón alternativo que simule el evento del sensor + probar en casa</td></tr>
   </tbody>
 </table>
